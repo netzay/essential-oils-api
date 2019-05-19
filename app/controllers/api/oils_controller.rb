@@ -1,6 +1,6 @@
 class Api::OilsController < ApplicationController
 
-before_action :set_oil, only: [:show, :udpate, :destroy]
+before_action :set_oil, only: [:show, :update, :destroy]
 
   def index
     render json: Oil.all
