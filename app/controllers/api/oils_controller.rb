@@ -7,7 +7,7 @@ before_action :set_oil, only: [:show, :update, :destroy]
   end
 
   def create
-    oil = Oil.new[oil_params]
+    oil = Oil.new(oil_params)
     if oil.save
       render json: oil
     else
@@ -44,6 +44,6 @@ before_action :set_oil, only: [:show, :update, :destroy]
   end
 
   def oil_params
-    params.require[:oil].permit(:name, :uses, :description)
+    params.require(:oil).permit(:name, :uses, :description, :img_url)
   end
 end

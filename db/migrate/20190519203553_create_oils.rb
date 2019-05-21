@@ -4,6 +4,7 @@ class CreateOils < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :uses
       t.string :description
+      t.string :img_url
 
       t.timestamps
     end
