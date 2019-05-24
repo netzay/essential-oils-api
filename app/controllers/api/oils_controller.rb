@@ -1,4 +1,5 @@
 class Api::OilsController < ApplicationController
+before_action :get_oil, only: [:show, :update, :destroy]
 
 before_action :set_oil, only: [:show, :update, :destroy]
 
@@ -28,8 +29,9 @@ before_action :set_oil, only: [:show, :update, :destroy]
   end
 
   def destroy
-    if @oil.destroy
-      render json: { message: "Deleted" }, status: 204
+    @oil = Oil.find(params[:id])
+    if @oil.destroy && @oil
+      render json: { message: "Deleted" }, status: 201
     else
       render json: { message: "Unable to remove this oil" }, status: 400
     end
@@ -40,6 +42,10 @@ before_action :set_oil, only: [:show, :update, :destroy]
   private
 
   def set_oil
+    @oil = Oil.find_by(id: params[:id])
+  end
+
+  def get_oil
     @oil = Oil.find_by(id: params[:id])
   end
 
