@@ -1,35 +1,33 @@
-# README
+# Essential Oils API (Backend)
 
-# GET /api/oil
-# GET /api/oil/:id
-# POST /api/oil
-# PUT /api/oil/:id
-# DELETE /api/oil/:id
+This app provides a quick way to store and view essential oils and their details and benefits.
 
-# Oils Model
-# name
-# uses
-# description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+    Clone repo - run rails s -p 3001 from terminal
 
-* Ruby version
+## Usage
 
-* System dependencies
+- View/delete oils.
+- Add new oils:
+  - name 
+  - uses
+  - description
+  - image
+  
+## Built with
 
-* Configuration
+	Ruby version: 2.6.1p33
 
-* Database creation
+## Contributing
 
-* Database initialization
+Bug reports and pull requests are welcome on GitHub at https://github.com/netzay/my-essential-oils-api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-* How to run the test suite
+## License
 
-* Services (job queues, cache servers, search engines, etc.)
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-* Deployment instructions
+## Code of Conduct
 
-* ...
+Everyone interacting in the RecipeBook project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/netzay/my-essential-oils-api/blob/master/CODE_OF_CONDUCT.md).
