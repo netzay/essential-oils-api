@@ -18,6 +18,7 @@ gem 'puma', '>= 3.12.4'
 gem 'nokogiri', '>= 1.10.8'
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
+gem "actionview", ">= 5.2.4.2"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
