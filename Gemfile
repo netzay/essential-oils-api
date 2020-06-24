@@ -2,13 +2,16 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
+gem "websocket-extensions", ">= 0.1.5"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'puma', '>= 3.12.4'
+gem "puma", ">= 4.3.5"
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -18,7 +21,13 @@ gem 'puma', '>= 3.12.4'
 gem 'nokogiri', '>= 1.10.8'
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
-gem "actionview", ">= 5.2.4.1"
+gem "actionview", ">= 5.2.4.2"
+gem "activestorage", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
+gem "activesupport", ">= 5.2.4.3"
+
+
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
