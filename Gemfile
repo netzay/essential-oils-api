@@ -18,7 +18,8 @@ gem "puma", ">= 4.3.5"
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'nokogiri', '>= 1.10.8'
+gem "nokogiri", ">= 1.11.0"
+
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
 gem "actionview", "6.0.3.2"
