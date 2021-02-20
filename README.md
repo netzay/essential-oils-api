@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/netzay/essential-oils-api)
+
 # Essential Oils API (Backend)
 
 This app provides a quick way to store and view essential oils and their details and benefits.
