@@ -6,7 +6,7 @@ gem "websocket-extensions", ">= 0.1.5"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '6.0.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -21,7 +21,7 @@ gem "puma", ">= 4.3.5"
 gem 'nokogiri', '>= 1.10.8'
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
-gem "actionview", ">= 5.2.4.2"
+gem "actionview", "6.0.3.2"
 gem "activestorage", ">= 5.2.4.3"
 gem "actionpack", ">= 5.2.4.3"
 gem "activesupport", ">= 5.2.4.3"
