@@ -22,7 +22,8 @@ gem "nokogiri", ">= 1.11.0"
 
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
-gem "actionview", "6.0.3.2"
+gem "actionview", ">= 5.2.4.4"
+
 gem "activestorage", ">= 5.2.4.3"
 gem "actionpack", ">= 5.2.4.3"
 gem "activesupport", ">= 5.2.4.3"
