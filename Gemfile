@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.1'
+ruby '2.6.6'
 gem "websocket-extensions", ">= 0.1.5"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '6.0.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -19,9 +19,11 @@ gem "puma", ">= 4.3.5"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "nokogiri", ">= 1.11.0"
+
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
-gem "actionview", ">= 5.2.4.2"
+gem "actionview", ">= 5.2.4.4"
+
 gem "activestorage", ">= 5.2.4.3"
 gem "actionpack", ">= 5.2.4.3"
 gem "activesupport", ">= 5.2.4.3"
