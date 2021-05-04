@@ -157,7 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack (>= 5.2.4.3)
-  actionview (>= 5.2.4.4)
+  actionview (>= 6.0.3.3)
   activestorage (>= 5.2.4.3)
   activesupport (>= 5.2.4.3)
   bootsnap (>= 1.1.0)
@@ -176,7 +176,7 @@ DEPENDENCIES
   websocket-extensions (>= 0.1.5)
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   2.1.4
+   2.2.11
