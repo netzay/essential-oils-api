@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "ember-cli-materialize": "^0.22.0"
+  }
+}

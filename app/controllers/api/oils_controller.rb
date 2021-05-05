@@ -20,14 +20,14 @@ before_action :set_oil, only: [:show, :update, :destroy]
     render json: @oil
   end
 
-  def update
-   @oil = Oil.find(params[:id])
-    if @oil.update(oil_params) && @oil
-      render json: @oil
-    else
-      render json: { message: oil.errors }, status: 400
-    end
-  end
+  # def update
+  #  @oil = Oil.find(params[:id])
+  #   if @oil.update(oil_params) && @oil
+  #     render json: @oil
+  #   else
+  #     render json: { message: oil.errors }, status: 400
+  #   end
+  # end
 
   def destroy
     @oil = Oil.find(params[:id])
