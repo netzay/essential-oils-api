@@ -25,7 +25,7 @@ gem 'loofah', '>= 2.3.1'
 gem "actionview", ">= 6.0.3.3"
 
 gem "activestorage", ">= 5.2.4.3"
-gem "actionpack", ">= 6.1.3.2"
+gem "actionpack", ">= 6.1.3"
 gem "activesupport", ">= 5.2.4.3"
 
 

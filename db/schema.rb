@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 2019_05_19_203553) do
   create_table "oils", force: :cascade do |t|
     t.string "name"
     t.string "uses"
-    t.string "description"
-    t.string "img_url"
+    t.string "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

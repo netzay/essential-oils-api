@@ -51,6 +51,6 @@ before_action :set_oil, only: [:show, :update, :destroy]
   end
 
   def oil_params
-    params.require(:oil).permit(:name, :uses, :description, :img_url)
+    params.require(:oil).permit(:name, :uses, :notes)
   end
 end

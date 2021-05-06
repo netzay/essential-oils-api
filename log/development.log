@@ -1536,3 +1536,130 @@ Processing by Api::OilsController#index as */*
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 590)
 
 
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOils (20190519203553)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "oils"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190519203553"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOils (20190519203553)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "oils" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "uses" varchar, "notes" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190519203553"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started DELETE "/api/oils/24" for ::1 at 2021-05-06 08:06:34 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::OilsController#destroy as */*
+  Parameters: {"oil"=>24, "id"=>"24"}
+  [1m[36mOil Load (0.5ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:50:in `get_oil'
+  [1m[36mCACHE Oil Load (0.0ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:46:in `set_oil'
+  [1m[36mCACHE Oil Load (0.0ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:33:in `destroy'
+Completed 404 Not Found in 40ms (ActiveRecord: 1.9ms | Allocations: 5380)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Oil with 'id'=24):
+  
+app/controllers/api/oils_controller.rb:33:in `destroy'
+Started GET "/api/oils" for ::1 at 2021-05-06 08:06:35 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.3ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 706)
+
+
+Started GET "/api/oils" for ::1 at 2021-05-06 08:06:36 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.5ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 608)
+
+
+Started GET "/api/oils" for ::1 at 2021-05-06 08:06:39 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.2ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 608)
+
+
+Started POST "/api/oils" for ::1 at 2021-05-06 08:06:45 -0400
+Processing by Api::OilsController#create as */*
+  Parameters: {"oil"=>{"name"=>"peppermint", "uses"=>"digestion", "notes"=>"minty"}}
+[31mUnpermitted parameter: :notes[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+  [1m[36mOil Create (0.9ms)[0m  [1m[32mINSERT INTO "oils" ("name", "uses", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "peppermint"], ["uses", "digestion"], ["created_at", "2021-05-06 12:06:45.927407"], ["updated_at", "2021-05-06 12:06:45.927407"]]
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 4.5ms | Allocations: 5198)
+
+
+Started GET "/api/oils" for ::1 at 2021-05-06 08:06:47 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.2ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 746)
+
+
+Started DELETE "/api/oils/1" for ::1 at 2021-05-06 08:07:25 -0400
+Processing by Api::OilsController#destroy as */*
+  Parameters: {"oil"=>1, "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/oils_controller.rb:50:in `get_oil'
+  [1m[36mOil Load (0.3ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:50:in `get_oil'
+  [1m[36mCACHE Oil Load (0.0ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:46:in `set_oil'
+  [1m[36mCACHE Oil Load (0.0ms)[0m  [1m[34mSELECT "oils".* FROM "oils" WHERE "oils"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/oils_controller.rb:33:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:34:in `destroy'
+  [1m[36mOil Destroy (0.4ms)[0m  [1m[31mDELETE FROM "oils" WHERE "oils"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/oils_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:34:in `destroy'
+Completed 201 Created in 26ms (Views: 0.3ms | ActiveRecord: 9.2ms | Allocations: 6589)
+
+
+Started GET "/api/oils" for ::1 at 2021-05-06 08:07:25 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.2ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 607)
+
+
+Started POST "/api/oils" for ::1 at 2021-05-06 08:07:31 -0400
+Processing by Api::OilsController#create as */*
+  Parameters: {"oil"=>{"name"=>"peppermint", "uses"=>"digestion", "notes"=>"minty"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+  [1m[36mOil Create (2.1ms)[0m  [1m[32mINSERT INTO "oils" ("name", "uses", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "peppermint"], ["uses", "digestion"], ["notes", "minty"], ["created_at", "2021-05-06 12:07:31.317005"], ["updated_at", "2021-05-06 12:07:31.317005"]]
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/oils_controller.rb:12:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 5.5ms | Allocations: 1759)
+
+
+Started GET "/api/oils" for ::1 at 2021-05-06 08:07:33 -0400
+Processing by Api::OilsController#index as */*
+  [1m[36mOil Load (0.2ms)[0m  [1m[34mSELECT "oils".* FROM "oils"[0m
+  ↳ app/controllers/api/oils_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 722)
+
+
