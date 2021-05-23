@@ -4,13 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.1'
 gem "websocket-extensions", ">= 0.1.5"
 
+gem "actionpack", ">= 6.1.3.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '6.1.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem "puma", ">= 4.3.5"
+gem "puma", ">= 5.3.1"
+
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -18,7 +20,7 @@ gem "puma", ">= 4.3.5"
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem "nokogiri", ">= 1.11.0"
+gem "nokogiri", ">= 1.11.4"
 
 gem 'loofah', '>= 2.3.1'
 #gem 'eslint-utils', '~> 1.4.1'
